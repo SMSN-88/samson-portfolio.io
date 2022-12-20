@@ -46,7 +46,7 @@ blockquote, q {
 		content: none;
 	}
 
-table {
+table { -+*
 	border-collapse: collapse;
 	border-spacing: 0;
 }
@@ -2434,7 +2434,12 @@ input, select, textarea {
 		.icon > .label {
 			display: none;
 		}
+		.icon.solid {
+			padding-bottom: -500px;
+			padding-top: 11px; 
+		}
 
+	
 		.icon:before {
 			line-height: inherit;
 		}

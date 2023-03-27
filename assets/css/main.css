@@ -1,6 +1,10 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
-
+@media (prefers-reduced-motion: no-preference) {
+	* {
+	  scroll-behavior: smooth;
+	}
+  }
 /*
 	Landed by HTML5 UP
 	html5up.net | @ajlkn
@@ -46,7 +50,7 @@ blockquote, q {
 		content: none;
 	}
 
-table { -+*
+table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
@@ -233,6 +237,12 @@ input, select, textarea {
 
 	.align-right {
 		text-align: right;
+	}
+	.projects p{
+		color: white;
+	}
+	.skills img{
+		align-items: stretch;
 	}
 
 /* Loader */
@@ -2153,12 +2163,13 @@ input, select, textarea {
 		text-align: center;
 	}
 
-	header p {
-		color: #ffffff;
-		position: relative;
-		margin: 0 0 1.5em 0;
-	}
+	.nav ul{
+		
+		bottom: 0;
+		right: 0;
 
+		
+	}
 	header h2 + p {
 		font-size: 1.25em;
 		margin-top: -1em;
@@ -2170,6 +2181,15 @@ input, select, textarea {
 		margin-top: -0.8em;
 		line-height: 1.75em;
 	}
+	nav > ul {
+		display: flex;
+		  justify-content: space-evenly;
+		flex-wrap: wrap;
+		  align-items: center;
+		  padding-inline-start: 0;
+		  margin-block: 0;
+		  height: 100%;
+	  }
 
 	header h4 + p,
 	header h5 + p,
@@ -2434,18 +2454,18 @@ input, select, textarea {
 		.icon > .label {
 			display: none;
 		}
-		.icon.solid {
-			padding-bottom: -500px;
-			padding-top: 11px; 
-		}
 
-	
 		.icon:before {
 			line-height: inherit;
 		}
 
 		.icon.solid:before {
-			font-weight: 900 !important;
+			font-weight: 900 !important;			
+		}
+
+		.icon.solid {
+			padding-bottom: -500px;
+			padding-top: 11px; 
 		}
 
 		.icon.brands:before {
@@ -2562,11 +2582,12 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
-			width: 100%;
+			width: 110%;
+			align-items: center;
 		}
 
 			.image.fit img {
-				width: 100%;
+				width: 110%;
 			}
 
 /* List */
@@ -3401,7 +3422,8 @@ input, select, textarea {
 		}
 
 		#header nav {
-			position: absolute;
+			position: fixed;
+			background-color: #181920;
 			right: 1em;
 			top: 0;
 		}
@@ -3705,9 +3727,7 @@ input, select, textarea {
 							padding-left: 0;
 						}
 
-				.spotlight .goto-next {
-					display: none;
-				}
+	
 
 		/* Wrapper */
 

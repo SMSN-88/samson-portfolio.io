@@ -3503,7 +3503,7 @@ input, select, textarea {
 
 		/* Banner */
 
-			#banner .content {
+				#banner .content {
 				padding: 3em 1.5625em 5.25em 1.5625em;	
 			}
 			#home {
@@ -3521,20 +3521,15 @@ input, select, textarea {
 
 					#home .content .words {
 						font-size: 18px;
-					}
-					#home .content .words .word{
-						width:fit-content;
-						font-size: 18px;
-					}
-					#home .content .loader p{
-						margin-right: 25px;
+						width: 200px; 
+						float: left;
 					}
 
 					#home .content .image {
 						height: 9em;
 						width: 9em;
-						margin-bottom: 50px;
 					}
+
 
 
 		/* Footer */

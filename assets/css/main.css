@@ -3462,10 +3462,9 @@ input, select, textarea {
 
 	}
 
-	
 /* XSmall */
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 475px) {
 
 		/* Basic */
 
@@ -3505,10 +3504,9 @@ input, select, textarea {
 		/* Banner */
 
 			#banner .content {
-				padding: 3em 1.5625em 5.25em 1.5625em;
-			box-sizing:;	
+				padding: 3em 1.5625em 5.25em 1.5625em;	
 			}
-		#home {
+			#home {
 				box-shadow: 0 0.125em 0.5em 0 rgba(0, 0, 0, 0.25);
 				min-height: calc(100vh - 44px);
 			}
@@ -3524,10 +3522,18 @@ input, select, textarea {
 					#home .content .words {
 						font-size: 18px;
 					}
+					#home .content .words .word{
+						width:fit-content;
+						font-size: 18px;
+					}
+					#home .content .loader p{
+						margin-right: 25px;
+					}
 
 					#home .content .image {
 						height: 9em;
 						width: 9em;
+						margin-bottom: 50px;
 					}
 
 

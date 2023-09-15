@@ -318,7 +318,7 @@ form .send-btn:hover{
 }
 .footer{
     padding: 10px 16%;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     display: flex;
     align-items: center;
     gap: 1rem;

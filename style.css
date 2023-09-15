@@ -413,38 +413,37 @@ form .send-btn:hover{
         margin-bottom: 20px;
     }
     #menu-icon{
-        display: block;
+        display: none;
     }
-    .navlist{
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        width: 255px;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        background: var(--bg-color);
-        transition: all .50s ease;
-    }
-    .navlist a{
-        display: block;
-        padding: 17px;
-        font-size: 22px;
-    }
-    .navlist.active{
-        right: 0;
-    }
+    
 }
 @media (max-width: 680px){
     .main-content p{
         width: 100%;
     }
+    .logo{
+        font-size: 0px;
+    }
+    .main-content p{
+        font-size: 70%;
+        font-weight: 100;
+        width: 300px;
+        line-height: 15px;
+        margin-bottom: -5px;
 }
-@media (max-width: 470px){
+}
+@media (max-width: 500px){
     :root{
-        --h1-font: 3rem;
+        --h1-font: 2rem;
         --h2-font: 2rem;
     }
+    .main-content p{
+        font-size: 70%;
+        font-weight: 100;
+        width: 300px;
+        line-height: 15px;
+        margin-bottom: -5px;
+}
     .about-img img{
         text-align: center;
         width: 100%;
@@ -454,12 +453,46 @@ form .send-btn:hover{
         object-fit: cover;
         margin: 0 auto;
     }
-    .main-content h1{
+    .logo{
+        font-size: 0px;
+    }
+    }
+    @media screen and (max-width: 460px) {
+        .h-btn{
+            display: none;
+        }
+    }
+    @media screen and (max-width: 390px) {
         
-    }
-    }
+        .navlist a{
+            display: flex;
+            padding: 9px;
+            font-size: 1%;
+        }
 
-
+    }
+    @media screen and (max-width: 281px) {
+        :root{
+            --h1-font: 1rem;
+            --h2-font: 1rem;
+        }
+        #menu-icon{
+            display: none;
+        }
+        .main-content p{
+            font-size: 70%;
+            font-weight: 100;
+            width: 300px;
+            line-height: 15px;
+            margin-bottom: -5px;
+    }
+    .logo{
+        font-size: 0px;
+    }
+    .navlist a{
+        padding-left: 5px;
+    }
+}
 
 
 

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
 *{
     padding: 0;
     margin: 0;
@@ -57,10 +59,45 @@ span{
     margin-left: 40px;
     transition: all .50s ease;
 }
+.navlist a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(1.6875rem, 1.9737rem + 2.8553vw, 10rem);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 200px;
+    z-index: -1;
+    color: hsl(0 0% 100% / 0.1);
+    opacity: 0;
+    transition: 0.5s ease;
+    pointer-events: none;
+  }
 .navlist a:hover{
     color: var(--main-color);
     text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
 }
+.navlist a:hover::before {
+    opacity: 1;
+    letter-spacing: 10px;
+  }
+.navlist li:nth-child(1) a::before {
+    color: hsl(267 60% 76% / 0.4);
+  }
+  .navlist li:nth-child(2) a::before {
+    color: hsl(174 60% 43% / 0.4);
+  }
+  .navlist li:nth-child(3) a::before {
+    color: hsl(258 60% 35% / 0.4);
+  }
+  .navlist li:nth-child(4) a::before {
+    color: hsl(349 52% 61% / 0.4);
+  }
+  .navlist li:nth-child(5) a::before {
+    color: hsl(29 60% 70% / 0.5);
+  }
 #menu-icon {
     font-size: 35px;
     z-index: 10001;
@@ -135,6 +172,25 @@ section{
     transition: all .50s ease;
 }
 
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    background-color: black;
+    width: 5px;
+    color: #fff;
+    text-align:center;
+    border-radius: 6px;
+    z-index: 1;
+    align-items: center;
+}
+
+.tooltip:hover .tooltiptext{
+visibility: visible;
+}
+
 img{
     width: 100%;
     height: 200px;
@@ -146,6 +202,10 @@ img{
 .social i:hover{
     transform: scale(1.1);
     box-shadow: 0 0 20px var(--main-color);
+}
+
+.main-btn{
+    margin-top: -35px;
 }
 .btn{
     display: inline-block;
@@ -336,6 +396,87 @@ form .send-btn:hover{
 
 }
 
+.wrapper{
+    max-width: 1100px;
+    width: 100%;
+    position:relative;
+}
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    
+}
+.wrapper i:first-child {
+    left: -22px;
+}
+.wrapper i:last-child{
+    right: -22px;
+}
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4.1) - 30px);
+    gap: 16px;
+   overflow-x: auto;
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+   scrollbar-width: 0px;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.carousel :where(.card, .img) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel .dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+.carousel .dragging .card {
+cursor: grab;
+-webkit-user-select: none;
+}
+.carousel .card {
+    scroll-snap-align: start;
+    height: 250px;
+    max-width: 700px;
+    list-style: none;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.card .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 20%;
+    }
+.card span {
+    color: #6a6d78;
+    font-size: 1rem;
+}
+.card span img {
+    height: 30px;
+    width: 30px;
+    }
+
 @media (max-width: 1700px) {
     header{
         padding: 20px 8%;
@@ -383,6 +524,9 @@ form .send-btn:hover{
     .box h3{
         font-size: 21px;
     }
+    section{
+        padding: 90px 5% 80px;
+    }
 }
 @media (max-width: 1240px){
     .about{
@@ -405,6 +549,22 @@ form .send-btn:hover{
         --p-font: 15px;
     }
 }
+@media (max-width: 1024px) {
+    .navlist a {
+        font-size: 1.2rem;
+        margin-left: 30px;
+    }
+    .navlist a::before {
+        font-size: clamp(1.2rem, 1.6rem + 2.5vw, 8rem);
+        letter-spacing: 150px;
+    }
+    .main-btn {
+        margin-top: -25px; /* Adjust as needed */
+    }
+    section{
+        padding: 90px 5% 80px;
+    }
+}
 @media (max-width: 950px){
     :root{
         --h1-font: 3.5rem;
@@ -417,6 +577,38 @@ form .send-btn:hover{
     }
     
 }
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+    .main-btn {
+        margin-top: -15px; /* Adjust as needed */
+    }
+    .navlist {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+    .navlist a {
+        margin-left: 0;
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
+    .navlist a::before {
+        font-size: clamp(1rem, 1.2rem + 2vw, 6rem);
+        letter-spacing: 100px;
+    }
+    .navlist.active {
+        display: flex;
+    }
+}
+
 @media (max-width: 680px){
     .main-content p{
         width: 100%;
@@ -457,6 +649,19 @@ form .send-btn:hover{
         font-size: 0px;
     }
     }
+    @media (max-width: 480px) {
+        .navlist a {
+            font-size: 0.875rem;
+            margin-bottom: 15px;
+        }
+        .main-btn {
+            margin-top: -20px; /* Adjust as needed */
+        }
+        .navlist a::before {
+            font-size: clamp(0.875rem, 1rem + 1.5vw, 4rem);
+            letter-spacing: 50px;
+        }
+    }
     @media screen and (max-width: 460px) {
         .h-btn{
             display: none;
@@ -492,7 +697,20 @@ form .send-btn:hover{
     .navlist a{
         padding-left: 5px;
     }
+   
 }
+
+ @media screen and (max-width: 900px) {
+        .wrapper .carousel {
+            grid-auto-columns: calc((100% / 2) - 9px);
+        }
+    }
+    @media screen and (max-width: 600px) {
+        .wrapper .carousel {
+            grid-auto-columns: 95%;
+        }
+    }
+
 
 
 

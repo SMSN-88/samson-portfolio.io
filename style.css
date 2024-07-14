@@ -432,6 +432,7 @@ form .send-btn:hover{
    scroll-snap-type: x mandatory;
    scroll-behavior: smooth;
    scrollbar-width: 0px;
+    background: var(--darkreader-bg--bg-color);
 }
 .carousel::-webkit-scrollbar{
     display: none;

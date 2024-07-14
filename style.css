@@ -405,7 +405,7 @@ form .send-btn:hover{
 .wrapper i {
     height: 50px;
     width: 50px;
-    background: #fff;
+    background: rgb(24, 26, 27);
     text-align: center;
     line-height: 50px;
     border-radius: 50%;
@@ -414,8 +414,7 @@ form .send-btn:hover{
     top: 50%;
     font-size: 1.25rem;
     transform: translateY(-50%);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);    
 }
 .wrapper i:first-child {
     left: -22px;

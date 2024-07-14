@@ -400,6 +400,7 @@ form .send-btn:hover{
     max-width: 1100px;
     width: 100%;
     position:relative;
+    background: var(--bg-color);
 }
 .wrapper i {
     height: 50px;
@@ -606,6 +607,7 @@ cursor: grab;
     }
     .navlist.active {
         display: flex;
+       background: var(--darkreader-bg--bg-color);
     }
 }
 

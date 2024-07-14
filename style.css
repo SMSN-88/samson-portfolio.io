@@ -400,7 +400,7 @@ form .send-btn:hover{
     max-width: 1100px;
     width: 100%;
     position:relative;
-    background: var(--bg-color);
+   background: var(--darkreader-bg--bg-color);
 }
 .wrapper i {
     height: 50px;

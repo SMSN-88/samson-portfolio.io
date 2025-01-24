@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samson Portfolio</title>=
+    <title>Samson Portfolio</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 
 <!--- box icons link --->
@@ -27,14 +27,14 @@
 <!--- Header --->
 
 <header>
-    <a href="home" class="logo">Samson <span>Portfolio.</span></a>
+    <a href="home" class="logo">PORT<span>FOLIO.</span></a>
 
     <div class="bx bx-menu" id="menu-icon"></div>
 
     <ul class="navlist">
      <li><a href="#home" data-text="Home">Home</a></li>
-     <li><a href="#about" data-text="About Me">About Me</a></li>
-     <li><a href="#projects" data-text="Projects">Projects</a></li>
+     <li><a href="aboutme.html" data-text="About Me">About Me</a></li>
+     <li><a href="projects.html" data-text="Projects">Projects</a></li>
      <li><a href="mailto:samson.codes88@gmail.com" data-text="Contact">Contact</a></li>
     </ul>
 
@@ -53,25 +53,16 @@
 <section class="hero" id="home">
     <div class="main-content">
         <h1>I'm <span>Samson Ayinde</span></h1> 
-        <p>Welcome!
-I’m Samson Ayinde, a Junior Software Developer with hands-on experience in frontend and backend development. Currently, I work at Timeslice, using technologies like Blazor, C#, and .NET Core and SQL database, to deliver intuitive and impactful software solutions.
-With a strong foundation in HTML, CSS, JavaScript, and React, I specialize in creating seamless user experiences and scalable backend systems. My career transition from Accounts Assistant to software development reflects my dedication to continuous learning and problem-solving.
-I am passionate about leveraging modern technologies and best practices to drive innovation. My aspiration is to grow into a Senior Developer role where I can lead projects, mentor aspiring developers, and contribute to impactful solutions within the tech community.
-Outside of coding, I channel my commitment and focus into fitness and sports, bringing the same energy and discipline to every project I undertake. Let’s create something remarkable together!</p>
-            
 
-            <div class="social">
-                <div class="tooltip"><a href="https://www.instagram.com/samsoncodecanvas"><i class="ri-instagram-fill"></i></a><span class="tooltiptext">Instagram</span></div>
-                <div class="tooltip"><a href="https://linkedin.com/in/smsn-ayinde"><i class="ri-linkedin-fill"></i></a><span class="tooltiptext">LinkedIn</span></div>
-                <div class="tooltip"> <a href="https://github.com/SMSN-88"><i class="ri-github-fill"></i></a><span class="tooltiptext">GitHub</span></div>
-                    <div class="tooltip"><a href="mailto:samson.codes88@gmail.com"><i class="ri-mail-send-line"></i></a><span class="tooltiptext">Email</span></div>
-            </div>
-            
-           <!-- <a href="#about" class="btn">About Me</a> -->
-    </div>
+        <div class="about-img2">
+            <img src="images/Me2.jpeg" alt="Samson Ayinde">
+        </div>           
+        
+    </div>   
+
 </section>
 
-<!--- About --->
+<!--- About 
 <section class="about" id="about">
 <div class="about-img" data-aos="zoom-in-down">
     <img src="images/Me2.jpeg">
@@ -113,8 +104,8 @@ Outside of coding, I channel my commitment and focus into fitness and sports, br
     </div>
 </div>
 </section>
-
-<!--- Projects --->
+--->
+<!--- Projects 
 <section class="projects" id="projects">
 <div class="center-text">
     <h2>My <span>Projects</span></h2>
@@ -170,20 +161,15 @@ Outside of coding, I channel my commitment and focus into fitness and sports, br
 
 </main>
 
-</section>
+</section> -->
+  <div class="text-rotator">
+        <span id="rotating-text"></span>
+      </div>
 
 
-<div class="footer">
-    <div class="copyright">
-        <p>2023 Portfolio <span>Samson Ayinde</span></p>
-    </div>
-    <a href="#home" class="scroll-top">
-        <i class="ri-arrow-up-circle-line"></i>   
-    </a>
-</div>
 <!-- js link -->
 <script  src="script.js"></script>
-
+<script src="index.js"></script>
 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
@@ -192,6 +178,7 @@ Outside of coding, I channel my commitment and focus into fitness and sports, br
     duration: 1400,
   });
 </script>
+
 
 
 </body>

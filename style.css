@@ -701,6 +701,15 @@ cursor: grab;
     section{
         padding: 90px 5% 80px;
     }
+    .wrapper2 i:first-child{
+        left: 170px;
+    }
+        .wrapper2 i:last-child {
+    right: -300px;
+}
+.wrapper2 .carousel{
+    margin-left: 220px;
+}
 }
 @media (max-width: 950px){
     :root{
@@ -712,7 +721,15 @@ cursor: grab;
     #menu-icon{
         display: none;
     }
-    
+    .wrapper2 i:first-child{
+        left: 170px;
+    }
+        .wrapper2 i:last-child {
+    right: -170px;
+}
+.wrapper2 .carousel{
+    margin-left: 220px;
+}
 }
 @media (max-width: 768px) {
     #menu-icon {
@@ -762,6 +779,7 @@ cursor: grab;
         margin-bottom: -5px;
 }
 }
+
 @media (max-width: 500px){
     :root{
         --h1-font: 2rem;
@@ -841,6 +859,9 @@ cursor: grab;
             width: 317px;
  
         }
+        .wrapper2 i:last-child {
+            right: 32px;
+        }
         #menu-icon{
             display: none;
         }
@@ -851,9 +872,21 @@ cursor: grab;
             line-height: 15px;
             margin-bottom: -5px;
     }
+    
      .about-img2 .text-rotator {
     
         margin-right: 400px;
+    }
+    .hero .main-content .about-img2 {
+        width: 100%;
+        height: 530px;
+        max-width: 330px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 0%;
+    }
+    .wrapper2 i:last-child {
+        right: 32px;
     }
     .logo{
         font-size: 0px;
@@ -870,11 +903,33 @@ cursor: grab;
         width: 317px;
 
     }
-
-    .about-img2 .text-rotator {
-    
-        margin-right: 400px;
+    .wrapper2 i:last-child {
+        right: 32px;
     }
+    .hero .main-content .about-img2 {
+        width: 100%;
+        height: 530px;
+        max-width: 330px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 0%;
+    }
+    .about-img2 .text-rotator {
+            margin-right: 400px;
+    }
+    
+}
+
+@media screen and (max-width: 912px){
+    .wrapper2 i:first-child{
+        left: 170px;
+    }
+        .wrapper2 i:last-child {
+    right: -300px;
+}
+.wrapper2 .carousel{
+    margin-left: 220px;
+}
 }
 
  @media screen and (max-width: 900px) {
@@ -957,12 +1012,7 @@ cursor: grab;
         font-size: 0.9rem;
         padding: 0.6rem 1.2rem;
     }
+    .wrapper2 i:last-child {
+        right: 32px;
+    }
 }
-
-
-
-
-
-
-
-

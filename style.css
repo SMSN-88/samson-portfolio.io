@@ -805,22 +805,13 @@ cursor: grab;
         font-size: 0px;
     }
     }
-    @media (max-width: 480px) {
-        .navlist a {
-            font-size: 0.875rem;
-            margin-bottom: 15px;
-        }
-        .main-btn {
-            margin-top: -20px; /* Adjust as needed */
-        }
-        .navlist a::before {
-            font-size: clamp(0.875rem, 1rem + 1.5vw, 4rem);
-            letter-spacing: 50px;
-        }
-    }
+   
     @media screen and (max-width: 460px) {
         .h-btn{
             display: none;
+        }
+        .wrapper2 .carousel{
+            margin-left: 220px;
         }
     }
     @media screen and (max-width: 390px) {
@@ -1014,5 +1005,23 @@ cursor: grab;
     }
     .wrapper2 i:last-child {
         right: 32px;
+    }
+    .navlist a {
+        font-size: 0.875rem;
+        margin-bottom: 15px;
+    }
+    .main-btn {
+        margin-top: -20px; /* Adjust as needed */
+    }
+    .navlist a::before {
+        font-size: clamp(0.875rem, 1rem + 1.5vw, 4rem);
+        letter-spacing: 50px;
+    }
+    
+    .wrapper2 {
+        right: 52px;
+    }
+    .wrapper2 .carousel{
+        width: 100px;
     }
 }
